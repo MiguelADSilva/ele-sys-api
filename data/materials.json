@@ -314,10 +314,81 @@
                 "electro siluz": "467"
               }
             }
-          }
-        },
-        "Cabos Rígidos" : {
-          
+          },
+          "Cabos Rígidos" : {
+            "CABO VV/XV 3 G  1,5 CREME":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "157"
+              }
+             },
+             "CABO VV/XV 3 G  1,5 PRETO":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "157"
+              }
+            },
+            "CABO VV/XV 3 G  2,5 CREME":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "236"
+              }
+            },
+            "CABO VV/XV 3 G  2,5 PRETO":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "236"
+              }
+            },
+            "CABO VV/XV 4 G  1,5 CREME":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "200"
+              }
+            },
+            "CABO VV/XV 4 G  1,5 PRETO":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "200"
+              }
+            },
+            "CABO VV/XV 4 G  2,5 CREME":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "303"
+              }
+            }, 
+            "CABO VV/XV 4 G  2,5 PRETO":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "303"
+              }
+            },
+            "CABO VV/XV 5 G  1,5 CREME":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "246"
+              }
+            },
+            "CABO VV/XV 5 G  1,5 PRETO":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "246"
+              }
+            }, 
+            "CABO VV/XV 5 G  2,5 CREME":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "373"
+              }
+            }, 
+            "CABO VV/XV 5 G  2,5 PRETO":{
+              "metros": "100m",
+              "price":{
+                "electro siluz": "373"
+              }
+            }
+           }
         }
       }
     }
