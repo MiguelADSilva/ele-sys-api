@@ -192,10 +192,133 @@
             }
           }
         },
-        "Fio de coluna" : {},
-        "Cabos Flexíveis" : {},
-        "Cabos Rígidos" : {}
+        "Fio de coluna" : {
+          "FIO DE COLUNA 2 x 0,50 BRANCO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "31"
+            }
+          },
+          "FIO DE COLUNA 2 x 0,50 PRETO/VERMELHO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "31"
+            }
+          },
+          "FIO DE COLUNA 2 x 0,75 BRANCO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "41"
+            }
+          },
+          "FIO DE COLUNA 2 x 0,75 PRETO/VERMELHO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "41"
+            }
+          },
+          "FIO DE COLUNA 2 x 1,0 BRANCO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "53"
+            }
+          },
+          "FIO DE COLUNA 2 x 1,0 PRETO/VERMELHO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "53"
+            }
+          },
+          "FIO DE COLUNA 2 x 1,5 BRANCO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "67"
+            }
+          },
+          "FIO DE COLUNA 2 x 1,5 PRETO/VERMELHO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "67"
+            }
+          }
+        },
+        "Cabos Flexíveis" : {
+          "CABO H05VV-F 3 G 1,5 (FVV) BRANCO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "174"
+            }
+          },
+          "CABO H05VV-F 3 G 1,5 (FVV) PRETO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "174"
+            }
+          },
+          "CABO H05VV-F 3 G 2,5  (FVV) BRANCO":{
+            "metros": "100m",
+            "price": {
+              "electro siluz": "287"
+            }
+          },
+          "CABO H05VV-F 3 G 2,5  (FVV) PRETO":{
+            "metros": "100m",
+            "price": {
+              "electro siluz": "287"
+            }
+          },
+          "CABO H05VV-F 4 G 1,5  (FVV) BRANCO":{
+            "metros": "100m",
+            "price": {
+              "electro siluz": "234"
+            }
+          },
+          "CABO H05VV-F 4 G 1,5  (FVV) PRETO":{
+            "metros": "100m",
+            "price": {
+              "electro siluz": "234"
+            }
+          },
+          "CABO H05VV-F 4 G 2,5  (FVV) BRANCO ":{
+            "metros": "100m",
+            "price": {
+              "electro siluz": "371"
+            }
+          },
+          "CABO H05VV-F 4 G 2,5  (FVV) PRETO":{
+            "metros": "100m",
+            "price": {
+              "electro siluz": "371"
+            }
+          },
+          "CABO H05VV-F 5 G 1,5  (FVV) BRANCO":{
+            "metros": "100m",
+            "price": {
+              "electro siluz": "291"
+            }
+          },"CABO H05VV-F 5 G 1,5  (FVV) PRETO":{
+            "metros": "100m",
+            "price": {
+              "electro siluz": "291"
+            }
+          },
+          "CABO H05VV-F 5 G 2,5  (FVV) BRANCO":{
+            "metros": "100m",
+            "price": {
+              "electro siluz": "467"
+            }
+          },
+          "CABO H05VV-F 5 G 2,5  (FVV) PRETO":{
+            "metros": "100m",
+            "price": {
+              "electro siluz": "467"
+            }
+          }
+        }
+      },
+      "Cabos Rígidos" : {
+
+      }
       }
     }
   }
-}
