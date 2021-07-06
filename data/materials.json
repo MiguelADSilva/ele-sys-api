@@ -70,7 +70,128 @@
         }
       },
       "Cabos de Cobre" : {
-        "Fio V" : {},
+        "Fio V" : {
+          "CABO H07V-U  1,5  AZUL": {
+            "metros" : "100m",
+            "price": {
+              "electro siluz": "43"
+            }
+          },
+          "CABO H07V-U  1,5  CASTANHO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "43"
+            }
+          },
+          "CABO H07V-U  1,5  CINZA": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "43"
+            }
+          },
+          "CABO H07V-U  1,5  PRETO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "43"
+            }
+          },
+          "CABO H07V-U  1,5  VERDE/AMARELO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "43"
+            }
+          },
+          "CABO H07V-U  2,5  AZUL": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "68"
+            }
+          },
+          "CABO H07V-U  2,5  CASTANHO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "68"
+            }
+          },
+          "CABO H07V-U  2,5  CINZA": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "68"
+            }
+          },
+          "CABO H07V-U  2,5  PRETO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "68"
+            }
+          },
+          "CABO H07V-U  2,5  VERDE/AMARELO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "68"
+            }
+          },
+          "CABO H07V-U  4  AZUL": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "106"
+            }
+          },
+          "CABO H07V-U  4  CASTANHO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "106"
+            }
+          },
+          "CABO H07V-U  4  CINZA": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "106"
+            }
+          },
+          "CABO H07V-U  4  PRETO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "106"
+            }
+          },
+          "CABO H07V-U  4  VERDE/AMARELO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "106"
+            }
+          },
+          "CABO H07V-U  6  AZUL": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "157"
+            }
+          },
+          "CABO H07V-U  6  CASTANHO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "157"
+            }
+          },
+          "CABO H07V-U  6  CINZA": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "157"
+            }
+          },
+          "CABO H07V-U  6  PRETO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "157"
+            }
+          },
+          "CABO H07V-U  6  VERDE/AMARELO": {
+            "metros": "100m",
+            "price": {
+              "electro siluz": "157"
+            }
+          }
+        },
         "Fio de coluna" : {},
         "Cabos Flexíveis" : {},
         "Cabos Rígidos" : {}
