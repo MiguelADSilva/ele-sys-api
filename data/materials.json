@@ -1,8 +1,79 @@
 {
   "Material Eltrico": {
-    "Siluz": {
-      "Cabo 3 2.5": {
-        "price": "27"
+    "Cabos": {
+      "Livres de Halogénio": {
+        "CABO XZ1FRT(XG) 3 G 1,5 VD": {
+          "metros" : "100m",
+          "price" : {
+            "electro siluz": "204"
+          }
+        },
+        "CABO XZ1FRT(XG) 3 G 2,5 VD" : {
+          "metros" : "100m",
+          "price" : {
+            "electro siluz": "293" 
+          }
+        },
+        "CABO XZ1FRT(XG) 5 G 1,5 VD" : {
+          "metros" : "100m",
+          "price" : {
+            "electro siluz": "313"
+          }
+        },
+        "CABO XZ1FRT(XG) 5 G 2,5 VD" : {
+          "metros" : "100m",
+          "price" : {
+            "electro siluz": "446"
+          }
+        },
+        "CABO RZ1-K(FXG) 3 G 1,5 VD" : {
+          "metros" : "100m",
+          "price" : {
+            "electro siluz": "240"
+          }
+        },
+        "CABO RZ1-K(FXG) 3 G 2,5 VD": {
+          "metros" : "100m",
+          "price" : {
+            "electro siluz": "343"
+          }
+        },
+        "CABO RZ1-K(FXG) 3 G 4 VD": {
+          "metros" : "100m",
+          "price" : {
+            "electro siluz": "495"
+          }
+        },
+        "CABO RZ1-K(FXG) 4 G 1,5 VD": {
+          "metros" : "100m",
+          "price": {
+            "electro siluz": "424"
+          }
+        },
+        "CABO RZ1-K(FXG) 5 G 1,5 VD" : {
+          "metros" : "100m",
+          "price": {
+            "electro siluz": "355"
+          }
+        },
+        "CABO RZ1-K(FXG) 5 G 2,5 VD" : {
+          "metros" : "100m",
+          "price": {
+            "electro siluz": "528"
+          }
+        },
+        "CABO RZ1-K(FXG) 5 G 4 VD": {
+          "metros" : "100m",
+          "price": {
+            "electro siluz": "794"
+          }
+        }
+      },
+      "Cabos de Cobre" : {
+        "Fio V" : {},
+        "Fio de coluna" : {},
+        "Cabos Flexíveis" : {},
+        "Cabos Rígidos" : {}
       }
     }
   }
