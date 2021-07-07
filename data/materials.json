@@ -1,5 +1,4 @@
 {
-  "MaterialEletrico": {
       "Cabos": {
         "LivresHalogénio": {
           "XZ1FRT": {
@@ -395,5 +394,4 @@
         "DadosVoz": {},
         "CabosCoxiais": {}
       }
-    }
   }
