@@ -1,7 +1,7 @@
 {
-  "Material Eltrico": {
+  "MaterialEletrico": {
       "Cabos": {
-        "Livres de Halogénio": {
+        "LivresHalogénio": {
           "CABO XZ1FRT(XG) 3 G 1,5 VD": {
             "metros" : "100m",
             "price" : {
@@ -390,9 +390,9 @@
             }
           }
         },
-        "Cabos de alarme": {},
-        "Dados/Voz": {},
-        "Cabos Coxiais": {}
+        "CabosAlarme": {},
+        "DadosVoz": {},
+        "CabosCoxiais": {}
       }
     }
   }
