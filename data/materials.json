@@ -2,7 +2,8 @@
   "MaterialEletrico": {
       "Cabos": {
         "LivresHalogénio": {
-          "CABO XZ1FRT(XG) 3 G 1,5 VD": {
+          "CABO XZ1FRT": {
+            "name": "CABO XZ1FRT(XG) 3 G 1,5 VD",
             "metros" : "100m",
             "price" : {
               "electro siluz": "204"
