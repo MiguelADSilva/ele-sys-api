@@ -1,27 +1,29 @@
 {
       "Cabos": {
         "LivresHalogénio": {
-          "XZ1FRT-3g-1,5": {
+          "XZ1FRT3g15": {
             "name": "CABO XZ1FRT(XG) 3 G 1,5 VD",
             "metros" : "100m",
             "price" : {
               "electro siluz": "204"
             }
           },
-          "XZ1FRT-3g-2,5" : {
+          "XZ1FRT3g25" : {
             "name": "CABO XZ1FRT(XG) 3 G 2,5 VD",
             "metros" : "100m",
             "price" : {
               "electro siluz": "293" 
             }
           },
-          "CABO XZ1FRT(XG) 5 G 1,5 VD" : {
+          "XZ1FRT5g15" : {
+            "name": "CABO XZ1FRT(XG) 5 G 1,5 VD",
             "metros" : "100m",
             "price" : {
               "electro siluz": "313"
             }
           },
-          "CABO XZ1FRT(XG) 5 G 2,5 VD" : {
+          "XZ1FRT5g25" : {
+            "name": "CABO XZ1FRT(XG) 5 G 2,5 VD",
             "metros" : "100m",
             "price" : {
               "electro siluz": "446"
