@@ -4,6 +4,7 @@
           "XZ1FRT3g15": {
             "name": "CABO XZ1FRT(XG) 3 G 1,5 VD",
             "metros" : "100m",
+            "image": "https://www.electrosiluz.com/wp-content/uploads/2021/07/109031500020210701081635.png?450x450",
             "price" : {
               "electroSiluz": "204"
             }
@@ -11,6 +12,7 @@
           "XZ1FRT3g25" : {
             "name": "CABO XZ1FRT(XG) 3 G 2,5 VD",
             "metros" : "100m",
+            "imagem" : "https://www.electrosiluz.com/wp-content/uploads/2021/07/109032500020210724032822.png?450x450",
             "price" : {
               "electro siluz": "293" 
             }
