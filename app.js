@@ -2,11 +2,14 @@ const express = require("express");
 const morgan = require("morgan");
 const app = express();
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const materialRoute = require("./api/routes/materials");
 
 mongoose.connect(
-  "mongodb+srv://Miguel:ele-sys1998@cluster0.vyrhv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "mongodb+srv://Miguel:" +
+    process.env.MONGO_ATLAS_PWD +
+    "@cluster0.vyrhv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
