@@ -36,7 +36,6 @@ exports.get_Materials = (req, res, next) => {
     .exec()
     .then((mat) => {
       const resp = {
-        count: mat.length,
         material: mat.map((responses) => {
           return {
             _id: new mongoose.Types.ObjectId(),
