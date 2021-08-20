@@ -48,7 +48,6 @@ exports.get_Materials = (req, res, next) => {
           };
         }),
       };
-      console.log("resp", resp);
       res.status(200).json(resp);
     });
 };
