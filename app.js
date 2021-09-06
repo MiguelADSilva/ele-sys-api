@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 const materialRoute = require("./api/routes/materials");
+const orcamentoRoute = require("./api/routes/orcamento");
 
 mongoose.connect(
   "mongodb+srv://Miguel:" +
@@ -35,6 +36,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/material", materialRoute);
+app.use("/orcamento", orcamentoRoute);
 
 app.use((req, res, next) => {
   const error = new Error("Not Found");
