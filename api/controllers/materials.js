@@ -21,7 +21,7 @@ exports.createMaterials = (req, res, next) => {
         material
           .save()
           .then((result) => {
-            res.status(201).json({ message: "Material Created" });
+            res.status(201).json({ message: result });
           })
           .catch((err) => {
             res.status(500).json({ error: err });
