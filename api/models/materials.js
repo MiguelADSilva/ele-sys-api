@@ -7,7 +7,7 @@ const materialsSchema = mongoose.Schema({
   cableType: { type: String, require: true },
   meters: { type: String, require: true },
   price: { type: String, require: true },
-  image: { type: String, require: true },
+  imageURL: { type: String, require: true },
 });
 
 module.exports = mongoose.model("Materials", materialsSchema);
