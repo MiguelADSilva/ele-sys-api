@@ -3,7 +3,6 @@ const orcamentoInfo = require("../models/materials");
 
 const orcamentoSchema = mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
-  oramentoName: { type: String, require: true, unique: true },
   orcamentoInfo: [
     { type: mongoose.Schema.Types.ObjectId, ref: "orcamentoInfo" },
   ],
