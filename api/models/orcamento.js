@@ -3,22 +3,22 @@ const orcamentoInfo = require("../models/materials");
 
 const orcamentoSchema = mongoose.Schema({
   cableName: [
-    { type: String, ref: orcamentoInfo },
+    { type: String },
   ],
   type: [
-    { type: String, ref: orcamentoInfo },
+    { type: String },
   ],
   cableType: [
-    { type: String, ref: orcamentoInfo }
+    { type: String }
   ],
   meters: [
-    { type: String, ref: orcamentoInfo }
+    { type: String }
   ],
   price: [
-    { type: String, ref: orcamentoInfo }
+    { type: String }
   ],
   imageURL: [
-    { type: String, ref: orcamentoInfo }
+    { type: String }
   ],
 });
 
