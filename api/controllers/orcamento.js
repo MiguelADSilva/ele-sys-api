@@ -11,7 +11,6 @@ exports.saveOrcamento = (req, res, next) => {
       } else {
         const orcamento = new Orcamento({
           _id: new mongoose.Types.ObjectId(),
-          oramentoName: req.body.oramentoName,
           orcamentoInfo: [
             {
               _id: req.body.orcamentoInfo._id,
