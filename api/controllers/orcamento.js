@@ -13,7 +13,6 @@ exports.saveOrcamento = (req, res, next) => {
           _id: new mongoose.Types.ObjectId(),
           orcamentoInfo: [
             {
-              _id: req.body.orcamentoInfo._id,
               cableName: req.body.orcamentoInfo.cableName,
               type: req.body.orcamentoInfo.type,
               cableType: req.body.orcamentoInfo.cableType,
