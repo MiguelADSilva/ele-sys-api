@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Orcamento = require("../models/orcamento");
 
 exports.saveOrcamento = (req, res, next) => {
-  Orcamento.find({ oramentoName: req.body.oramentoName })
+  Orcamento.find({ cableName: req.body.cableName })
     .exec()
     .then((orcamentoExist) => {
       if (orcamentoExist.length >= 1) {
