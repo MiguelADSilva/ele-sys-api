@@ -4,17 +4,17 @@ const orcamentoInfo = require("../models/materials");
 const orcamentoSchema = mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
   cableName: 
-    { type: String, ref: orcamentoInfo },
+    { type: String},
   type: 
-    { type: String, ref: orcamentoInfo },
+    { type: String },
   cableType: 
-    { type: String, ref: orcamentoInfo },
+    { type: String},
   meters: 
-    { type: String, ref: orcamentoInfo },
+    { type: String },
   price: 
-    { type: String, ref: orcamentoInfo },
+    { type: String },
   imageURL: 
-    { type: String, ref: orcamentoInfo }
+    { type: String }
 });
 
 module.exports = mongoose.model("Orcamento", orcamentoSchema);
