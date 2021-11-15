@@ -11,14 +11,14 @@ exports.saveOrcamento = (req, res, next) => {
       } else {
         const orcamento = new Orcamento({
           _id: new mongoose.Types.ObjectId(),
-          orcamentoInfo: [
+          [
             {
-              cableName: req.body.orcamentoInfo.cableName,
-              type: req.body.orcamentoInfo.type,
-              cableType: req.body.orcamentoInfo.cableType,
-              meters: req.body.orcamentoInfo.meters,
-              price: req.body.orcamentoInfo.price,
-              imageURL: req.body.orcamentoInfo.imageURL,
+              cableName: req.body.cableName,
+              type: req.body.type,
+              cableType: req.body.cableType,
+              meters: req.body.meters,
+              price: req.body.price,
+              imageURL: req.body.imageURL,
             },
           ],
         });

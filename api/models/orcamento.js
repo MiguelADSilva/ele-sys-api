@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const orcamentoInfo = require("../models/materials");
 
 const orcamentoSchema = mongoose.Schema({
-  id: mongoose.Schema.Types.ObjectId,
+  _id: mongoose.Schema.Types.ObjectId,
   cableName: [
     { type: String, ref: orcamentoInfo },
   ],
