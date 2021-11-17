@@ -9,7 +9,7 @@ exports.saveOrcamento = (req, res, next) => {
       if (orcamentoExist.length >= 1) {
         res.status(400).json({ message: "Orcamento Já existe" });
       } else {
-        const orcamento = new Orcamento({[{
+        const orcamento = new Orcamento([{
           _id: new mongoose.Types.ObjectId(),
           cableName: req.body.cableName,
           type: req.body.type,
@@ -17,7 +17,7 @@ exports.saveOrcamento = (req, res, next) => {
           meters: req.body.meters,
           price: req.body.price,
           imageURL: req.body.imageURL,
-        }]});
+        }]);
         orcamento
           .save()
           .then((result) => {
