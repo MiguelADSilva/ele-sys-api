@@ -7,7 +7,7 @@ exports.saveOrcamento = (req, res, next) => {
     .exec()
     .then((orcam) => {
       if (orcam.length >= 1) {
-        res.status(400).json({ message: "Orcamento Já existe" });
+        res.status(400).json({ message: req.body.cableName });
       } else {
         const orcam = new Orcamento({
           _id: new mongoose.Types.ObjectId(),
