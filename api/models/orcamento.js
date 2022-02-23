@@ -2,16 +2,16 @@ const mongoose = require("mongoose");
 
 const orcamentoSchema = mongoose.Schema({
   orcamento_id: mongoose.Schema.Types.ObjectId,
-  orcamentoName: req.body.orcamentoName,
+  orcamentoName: { type: String, require: true, unique: true },
   lists: [
     {
-      _id: req.body._id,
-      cableName: req.body.cableName,
-      type: req.body.type,
-      cableType: req.body.cableType,
-      meters: req.body.meters,
-      price: req.body.price,
-      imageURL: req.body.imageURL,
+      _id: { type: String, require: true, unique: true },
+      cableName: { type: String, require: true, unique: true },
+      type: { type: String, require: true },
+      cableType: { type: String, require: true },
+      meters: { type: String, require: true },
+      price: { type: String, require: true },
+      imageURL: { type: String, require: true },
     },
   ],
 });
