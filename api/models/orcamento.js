@@ -9,7 +9,7 @@ const orcamentoSchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         require: true,
       },
-      cableName: { type: String, require: true, unique: true },
+      cableName: { type: String, require: true },
       type: { type: String, require: true },
       cableType: { type: String, require: true },
       meters: { type: String, require: true },
