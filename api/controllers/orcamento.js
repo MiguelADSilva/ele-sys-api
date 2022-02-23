@@ -14,13 +14,13 @@ exports.saveOrcamento = (req, res, next) => {
           orcamentoName: req.body.orcamentoName,
           lists: [
             {
-              _id: req.body._id,
-              cableName: req.body.cableName,
-              type: req.body.type,
-              cableType: req.body.cableType,
-              meters: req.body.meters,
-              price: req.body.price,
-              imageURL: req.body.imageURL,
+              orcamento_list_id: req.body.orcamento_list__id,
+              orcamento_list_cableName: req.orcamento_list_body.cableName,
+              orcamento_list_type: req.body.orcamento_list_type,
+              orcamento_list_cableType: req.body.orcamento_list_cableType,
+              orcamento_list_meters: req.body.orcamento_list_meters,
+              orcamento_list_price: req.body.orcamento_list_price,
+              orcamento_list_imageURL: req.body.orcamento_list_imageURL,
             },
           ],
         });
