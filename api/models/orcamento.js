@@ -6,7 +6,7 @@ const orcamentoSchema = mongoose.Schema({
   material: [
     {
       cable_id: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: String,
         require: true,
       },
       cableName: { type: String, require: true },
