@@ -12,7 +12,7 @@ exports.saveOrcamento = (req, res, next) => {
         const orcam = new Orcamento({
           orcamento_id: new mongoose.Types.ObjectId(),
           orcamentoName: req.body.orcamentoName,
-          materalId: req.body.materalId,
+          materal: req.body.materalId,
         });
         orcam
           .save()
