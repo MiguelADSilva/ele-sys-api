@@ -10,23 +10,27 @@ exports.saveOrcamento = (req, res, next) => {
         res.status(400).json({ message: "Orcamento Já existe" });
       } else {
         const orcamento = new Orcamento({
-          _id: new mongoose.Types.ObjectId(),
-          oramentoName: req.body.oramentoName,
           orcamentoInfo: [
             {
-              _id: req.body.orcamentoInfo._id,
-              cableName: req.body.orcamentoInfo.cableName,
-              type: req.body.orcamentoInfo.type,
-              cableType: req.body.orcamentoInfo.cableType,
-              meters: req.body.orcamentoInfo.meters,
-              price: req.body.orcamentoInfo.price,
-              imageURL: req.body.orcamentoInfo.imageURL,
+              orcamento_id: new mongoose.Types.ObjectId(),
+              orcamentoName: req.body.orcamentoName,
+              lists: [
+                {
+                  _id: req.body._id,
+                  cableName: req.body.cableName,
+                  type: req.body.type,
+                  cableType: req.body.cableType,
+                  meters: req.body.meters,
+                  price: req.body.price,
+                  imageURL: req.body.imageURL,
+                },
+              ],
             },
           ],
         });
         orcamento
           .save()
-          .then((result) => {
+          .then((res) => {
             res.status(201).json({ message: "Orcamento Created" });
           })
           .catch((err) => {
@@ -44,10 +48,11 @@ exports.get_Orcamentos = (req, res, next) => {
       const resp = {
         orcamento: orca.map((response) => {
           return {
-            _id: new mongoose.Types.ObjectId(),
-            oramentoName: response.oramentoName,
-            orcamentoInfo: [
+            orcamento_id: response.orcamento_id,
+            orcamentoName: response.orcamentoName,
+            lists: [
               {
+                _id: response._id,
                 cableName: response.cableName,
                 type: response.type,
                 cableType: response.cableType,
