@@ -10,7 +10,7 @@ exports.saveOrcamento = (req, res, next) => {
         res.status(400).json({ message: "Orcamento Já existe" });
       } else {
         const orcam = new Orcamento({
-          orcamento_id: new mongoose.Types.ObjectId(),
+          orcamentoId: new mongoose.Types.ObjectId(),
           orcamentoName: req.body.orcamentoName,
           material: req.body.materialId,
         });
