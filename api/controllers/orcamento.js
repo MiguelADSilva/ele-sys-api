@@ -5,11 +5,11 @@ const Orcamento = require("../models/orcamento");
 exports.saveOrcamento = (req, res, next) => {
   Orcamento.find({ orcamentoName: req.body.orcamentoName })
     .exec()
-    .then((orcamentoExist) => {
-      if (orcamentoExist.length >= 1) {
+    .then((orcam) => {
+      if (orcam.length >= 1) {
         res.status(400).json({ message: "Orcamento Já existe" });
       } else {
-        const orcamento = new Orcamento([
+        const orcam = new Orcamento([
           {
             orcamento_id: new mongoose.Types.ObjectId(),
             orcamentoName: req.body.orcamentoName,
@@ -26,7 +26,7 @@ exports.saveOrcamento = (req, res, next) => {
             ],
           },
         ]);
-        orcamento
+        orcam
           .save()
           .then((res) => {
             res.status(201).json({ message: "Orcamento Created" });
