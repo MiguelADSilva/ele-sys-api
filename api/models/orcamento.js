@@ -5,7 +5,7 @@ const orcamentoSchema = mongoose.Schema({
   orcamentoName: { type: String, require: true, unique: true },
   material: [
     {
-      cable_id: {
+      _id: {
         type: String,
         require: true,
       },

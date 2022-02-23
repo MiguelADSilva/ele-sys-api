@@ -14,7 +14,7 @@ exports.saveOrcamento = (req, res, next) => {
           orcamentoName: req.body.orcamentoName,
           material: [
             {
-              cable_id: req.body.cable_id,
+              _id: req.body._id,
               cableName: req.body.cableName,
               type: req.body.type,
               cableType: req.body.cableType,
