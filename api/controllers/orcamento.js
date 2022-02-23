@@ -7,7 +7,7 @@ exports.saveOrcamento = (req, res, next) => {
     .exec()
     .then((orcam) => {
       if (orcam.length >= 1) {
-        res.status(400).json({ message: req.body.cableName });
+        res.status(400).json({ message: req.body.orcamento });
       } else {
         const orcam = new Orcamento({
           _id: new mongoose.Types.ObjectId(),
