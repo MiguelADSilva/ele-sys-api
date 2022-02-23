@@ -29,7 +29,7 @@ exports.saveOrcamento = (req, res, next) => {
         orcam
           .save()
           .then((res) => {
-            res.status(201).json({ message: "Orcamento Created" });
+            res.status(201).json({ message: res });
           })
           .catch((err) => {
             res.status(500).json({ error: err });
