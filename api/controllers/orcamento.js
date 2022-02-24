@@ -37,17 +37,7 @@ exports.get_Orcamentos = (req, res, next) => {
           return {
             orcamento_id: response.orcamento_id,
             orcamentoName: response.orcamentoName,
-            lists: [
-              {
-                _id: response._id,
-                cableName: response.cableName,
-                type: response.type,
-                cableType: response.cableType,
-                meters: response.meters,
-                price: response.price,
-                imageURL: response.imageURL,
-              },
-            ],
+            items: response.items,
           };
         }),
       };
