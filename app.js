@@ -8,9 +8,7 @@ const materialRoute = require("./api/routes/materials");
 const orcamentoRoute = require("./api/routes/orcamento");
 
 mongoose.connect(
-  "mongodb+srv://Miguel:" +
-    process.env.MONGO_ATLAS_PWD +
-    "@cluster0.vyrhv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "mongodb+srv://Miguel:MiguelADSilva9910_@cluster0.vyrhv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
