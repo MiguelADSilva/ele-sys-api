@@ -12,22 +12,13 @@ exports.saveOrcamento = (req, res, next) => {
         const orcam = new Orcamento({
           _id: new mongoose.Types.ObjectId(),
           orcamentoName: req.body.orcamentoName,
-          material: [
-            {
-              cable_id: req.body.material.cable_id,
-              cableName: req.body.material.cableName,
-              type: req.body.material.type,
-              cableType: req.body.material.cableType,
-              meters: req.body.material.meters,
-              price: req.body.material.price,
-              imageURL: req.body.material.imageURL,
-            },
-          ],
+          items: req.body.items,
         });
         orcam
           .save()
-          .then((res) => {
-            res.status(201).json({ message: res });
+          .then((result) => {
+            console.log(req.body);
+            res.status(201).json({ message: result });
           })
           .catch((err) => {
             res.status(500).json({ error: err });
