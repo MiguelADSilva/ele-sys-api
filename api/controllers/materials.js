@@ -54,7 +54,7 @@ exports.get_Materials = (req, res, next) => {
 
 exports.deleteMaterials = (req, res, next) => {
   Materials
-    .remove({ _id: req.params.userId })
+    .remove({ cableName: req.params.nameCable })
     .exec()
     .then(res => {
       res.status(200).json({
