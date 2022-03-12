@@ -5,5 +5,6 @@ const MaterialsControllers = require("../controllers/materials");
 
 router.post("/createMaterial", MaterialsControllers.createMaterials);
 router.get("/getMaterials", MaterialsControllers.get_Materials);
+router.delete("/:userId", MaterialsControllers.deleteMaterials);
 
 module.exports = router;

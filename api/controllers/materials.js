@@ -51,3 +51,19 @@ exports.get_Materials = (req, res, next) => {
       res.status(200).json(resp);
     });
 };
+
+exports.deleteMaterials = (req, res, next) => {
+  Materials
+    .remove({ _id: req.params.userId })
+    .exec()
+    .then(res => {
+      res.status(200).json({
+        message: res
+      });
+    })
+    .catch(err => {
+      res.status(500).json({
+        message: err
+      })
+    })
+}

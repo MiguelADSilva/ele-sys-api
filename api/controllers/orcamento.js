@@ -46,3 +46,19 @@ exports.get_Orcamentos = (req, res, next) => {
       res.status(200).json(resp);
     });
 };
+
+exports.deleteOrcamentos = (req, res, next) => {
+  Orcamento
+    .remove({ orcamento_id: req.params.userId})
+    .exec()
+    .then(res => {
+      res.status(200).json({
+        message: res
+      });
+    })
+    .catch(err => {
+      res.status(500).json({
+        message: err
+      })
+    })
+}
