@@ -58,7 +58,7 @@ exports.deleteMaterials = (req, res, next) => {
     .exec()
     .then(res => {
       res.status(200).json({
-        message: res
+        message: 'Material deleted'
       });
     })
     .catch(err => {
