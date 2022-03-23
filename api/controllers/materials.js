@@ -15,6 +15,7 @@ exports.createMaterials = (req, res, next) => {
           cableType: req.body.cableType,
           meters: req.body.meters,
           price: req.body.price,
+          cor: req.body.color,
           imageURL: req.body.imageURL,
           _id: new mongoose.Types.ObjectId(),
         });
