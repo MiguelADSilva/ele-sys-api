@@ -3,8 +3,7 @@ const mongoose = require("mongoose");
 const Materials = require("../models/materials");
 
 exports.createMaterials = (req, res, next) => {
-  Materials.find({ _id: req.body._id })
-    .exec()
+  Materials.exec()
     .then((material) => {
       if (material.length >= 1) {
         res.status(409).json({ message: "Material Exists" });
