@@ -45,6 +45,7 @@ exports.get_Materials = (req, res, next) => {
             cableType: responses.cableType,
             meters: responses.meters,
             price: responses.price,
+            color: responses.color,
             imageURL: responses.imageURL,
           };
         }),
