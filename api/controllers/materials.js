@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Materials = require("../models/materials");
 
 exports.createMaterials = (req, res, next) => {
-  Materials.find({ cableName: req.body.cableName })
+  Materials.find({ _id: req.body._id })
     .exec()
     .then((material) => {
       if (material.length >= 1) {
