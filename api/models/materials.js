@@ -7,6 +7,8 @@ const materialsSchema = mongoose.Schema({
   cableType: { type: String, require: true },
   meters: { type: String, require: true },
   price: { type: String, require: true },
+  serie: { type: String, require: true},
+  primayColor: {type: String, require: true},
   color: { type: String, require: true},
   imageURL: { type: String, require: true },
 });

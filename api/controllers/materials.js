@@ -15,6 +15,8 @@ exports.createMaterials = (req, res, next) => {
           cableType: req.body.cableType,
           meters: req.body.meters,
           price: req.body.price,
+          serie: req.body.serie,
+          primaryColor: req.body.primaryColor,
           color: req.body.color,
           imageURL: req.body.imageURL,
           _id: new mongoose.Types.ObjectId(),
@@ -45,6 +47,8 @@ exports.get_Materials = (req, res, next) => {
             cableType: responses.cableType,
             meters: responses.meters,
             price: responses.price,
+            serie: responses.serie,
+            primaryColor: responses.primaryColor,
             color: responses.color,
             imageURL: responses.imageURL,
           };
