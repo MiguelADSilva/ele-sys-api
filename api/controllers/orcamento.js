@@ -10,7 +10,7 @@ exports.saveOrcamento = (req, res, next) => {
         res.status(400).json({ message: "Já Existe" });
       } else {
         const orcam = new Orcamento({
-          _id: new mongoose.Types.ObjectId(),
+          id: new mongoose.Types.ObjectId(),
           orcamentoName: req.body.orcamentoName,
           totalPrice: req.body.totalPrice,
           items: req.body.items,
@@ -36,7 +36,7 @@ exports.get_Orcamentos = (req, res, next) => {
       const resp = {
         orcamento: orca.map((response) => {
           return {
-            orcamento_id: response.orcamento_id,
+            id: response.id,
             orcamentoName: response.orcamentoName,
             totalPrice: response.totalPrice,
             items: response.items,
@@ -49,7 +49,7 @@ exports.get_Orcamentos = (req, res, next) => {
 
 exports.deleteOrcamentos = (req, res, next) => {
   Orcamento
-    .delete({ orcamento_id: req.params.orcamento_id})
+    .delete({ id: req.params.id})
     .exec()
     .then(res => {
       res.status(200).json({
