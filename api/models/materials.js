@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const materialsSchema = mongoose.Schema({
-  id: mongoose.Schema.Types.ObjectId,
+  _id: mongoose.Schema.Types.ObjectId,
   cableName: { type: String, require: true },
   type: { type: String, require: true },
   cableType: { type: String, require: true },

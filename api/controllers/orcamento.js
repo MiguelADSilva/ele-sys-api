@@ -10,7 +10,7 @@ exports.saveOrcamento = (req, res, next) => {
         res.status(400).json({ message: "Já Existe" });
       } else {
         const orcam = new Orcamento({
-          id: new mongoose.Types.ObjectId(),
+          _id: new mongoose.Types.ObjectId(),
           orcamentoName: req.body.orcamentoName,
           totalPrice: req.body.totalPrice,
           items: req.body.items,
@@ -36,7 +36,7 @@ exports.get_Orcamentos = (req, res, next) => {
       const resp = {
         orcamento: orca.map((response) => {
           return {
-            id: response.id,
+            _id: response._id,
             orcamentoName: response.orcamentoName,
             totalPrice: response.totalPrice,
             items: response.items,

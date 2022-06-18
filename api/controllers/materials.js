@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Materials = require("../models/materials");
 
 exports.createMaterials = (req, res, next) => {
-  Materials.find({ id: req.body.id })
+  Materials.find({ _id: req.body._id })
     .exec()
     .then((material) => {
       if (material.length >= 1) {
@@ -19,7 +19,7 @@ exports.createMaterials = (req, res, next) => {
           primaryColor: req.body.primaryColor,
           color: req.body.color,
           imageURL: req.body.imageURL,
-          id: new mongoose.Types.ObjectId(),
+          _id: new mongoose.Types.ObjectId(),
         });
         material
           .save()
@@ -41,7 +41,7 @@ exports.get_Materials = (req, res, next) => {
       const resp = {
         material: mat.map((responses) => {
           return {
-            id: new mongoose.Types.ObjectId(),
+            _id: new mongoose.Types.ObjectId(),
             cableName: responses.cableName,
             type: responses.type,
             cableType: responses.cableType,
@@ -60,7 +60,7 @@ exports.get_Materials = (req, res, next) => {
 
 exports.deleteMaterials = (req, res, next) => {
   Materials
-    .delete({ id: req.params.id })
+    .delete({ _id: req.params._id })
     .exec()
     .then(res => {
       res.status(200).json({
