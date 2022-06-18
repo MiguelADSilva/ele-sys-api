@@ -60,7 +60,7 @@ exports.get_Materials = (req, res, next) => {
 
 exports.deleteMaterials = (req, res, next) => {
   Materials
-    .findByIdAndDelete( req.params._id )
+    .findByIdAndDelete( req.params.id )
     .exec()
     .then(res => {
       res.status(200).json({
