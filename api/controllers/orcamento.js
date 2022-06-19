@@ -49,7 +49,7 @@ exports.get_Orcamentos = (req, res, next) => {
 
 exports.deleteOrcamentos = (req, res, next) => {
   Orcamento
-    .delete({ id: req.params.id})
+    .delete({ orcamentoName: req.params.name})
     .exec()
     .then(res => {
       res.status(200).json({
