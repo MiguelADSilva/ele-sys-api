@@ -18,11 +18,21 @@ mongoose.connect(
   }
 );
 
-app.use(morgan("dev"));
-app.use(cors({
+const corsOpts = {
   origin: '*',
-  methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
-}))
+
+  methods: [
+    'GET',
+    'POST',
+  ],
+
+  allowedHeaders: [
+    'Content-Type',
+  ],
+};
+
+app.use(morgan("dev"));
+app.use(cors(corsOpts));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
