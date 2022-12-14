@@ -20,7 +20,8 @@ mongoose.connect(
 
 app.use(morgan("dev"));
 app.use(cors({
-  origin: '*'
+  origin: '*',
+  methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
 }))
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
